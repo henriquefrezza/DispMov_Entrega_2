@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 const ContatoItem = (props) => {
     return (
-        <TouchableOpacity onPress={() => props.onDelete(props.chave)}>
+        <TouchableOpacity onLongPress={() => props.onDelete(props.chave)}>
             <View style={estilos.contatoNaLista}>
                 <Text>{props.nome}</Text>
                 <Text>{props.numero}</Text>
